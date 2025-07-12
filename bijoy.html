@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Skills - SkillSync</title>
+  <link rel="icon" type="image/png" href="logo.jpg" />
+  <link rel="stylesheet" href="bijoy.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul id="categoryList">
+        <li data-category="All" class="active">All</li>
+        <li data-category="Tech">Tech</li>
+        <li data-category="Art">Art</li>
+        <li data-category="Marketing">Marketing</li>
+        <li data-category="Language">Language</li>
+        <li data-category="Cooking">Cooking</li>
+      </ul>
+      <button id="darkModeToggle">🌓 Dark Mode</button>
+    </aside>
+
+    <main>
+      <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Search skills..." />
+      </div>
+      <div class="skill-grid" id="skillGrid">
+        <!-- Skill cards rendered here -->
+      </div>
+    </main>
+  </div>
+
+  <script src="bijoy.js"></script>
+</body>
+</html>

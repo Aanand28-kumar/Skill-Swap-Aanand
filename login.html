@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | SkillSwap</title>
+  <link rel="stylesheet" href="bijoy.css" />
+</head>
+<body>
+  <div class="container" style="flex-direction: column; justify-content: center; align-items: center;">
+    <img src="logo.jpg" alt="SkillSwap Logo" style="width: 80px; margin-bottom: 1rem;" />
+    <h2>Login to SkillSwap</h2>
+
+    <form onsubmit="loginUser(event)" style="display: flex; flex-direction: column; width: 300px; gap: 1rem; margin-top: 1rem;">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <div style="margin-top: 1rem; font-size: 14px;">
+      <a href="forget.html">Forgot Password?</a> |
+      <a href="register.html">Create Account</a>
+    </div>
+  </div>
+
+  <script>
+    function loginUser(event) {
+      event.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+
+      // Just show values in console (mock login)
+      console.log('Logging in with', email, password);
+      alert('Login successful (demo)');
+      window.location.href = 'home.html'; // Redirect after login
+    }
+  </script>
+</body>
+</html>
